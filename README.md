@@ -34,7 +34,7 @@ Beberapa hal yang harus dilakukan untuk clone app tersebut.
 ```sh
 git clone git@github.com:lordfalah/App-camera.git
 npm i
-node start
+npm start
 ```
 
 For production environments...
