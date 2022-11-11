@@ -1,0 +1,51 @@
+- custom button css 
+
+- react router 
+
+- Components/Layout - Container Responsive ⋅ Reactstrap
+
+- Change Profile Test – Figma
+
+- how to make footer stay at bottom
+
+- grid template areas css
+
+- how to use react webcam
+
+- How To Create a Fullscreen Video Background
+
+-how to make video fullscreen html 
+
+- Add a responsive fullscreen HTML5 video background to a webpage 
+
+- PX to REM converter (instantly and bidirectional)
+
+- translatey css 
+
+- How to Center an Absolute Positioned Element Vertically and HorizonTAL
+
+- useOutletContext v6.4.3 
+
+- react-image-crop - npm
+
+- javascript - Get image preview before uploading in React - Stack Overflow
+
+- javascript - HTML input type=file, get the image before submitting the form - Stack Overflow
+
+- Custom File Input Styling | CSS-Tricks - CSS-Tricks
+
+- warning: Cannot update a component (`Layout`) while rendering a different component - Penelusuran Google
+
+- reactjs - Get cropped image via react-image-crop module - Stack Overflow
+
+- How to crop images in ReactJS ? - GeeksforGeek
+
+- net::ERR_FILE_NOT_FOUND file
+
+- net::ERR_FILE_NOT_FOUND blob 
+
+- javascript - Failed to load resource: net::ERR_FILE_NOT_FOUND loading json.js - Stack Overflow
+
+- javascript - Failed to load resource: net::ERR_FILE_NOT_FOUND, Uncaught (in promise) TypeError: Failed to fetch - Stack Overflow
+- css media queries
+
