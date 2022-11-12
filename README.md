@@ -29,7 +29,7 @@ Memudahkan untuk pengambilan camera
 ## Installation
 
 
-Beberapa hal yang harus dilakukan untuk clone app tersebut.
+Beberapa hal yang harus dilakukan.
 
 ```sh
 git clone git@github.com:lordfalah/App-camera.git
@@ -37,12 +37,6 @@ npm i
 npm start
 ```
 
-For production environments...
-
-```sh
-npm install --production
-NODE_ENV=production node app
-```
 
 ## Screnshoot App
 ![Screenshot from 2022-11-11 23-23-57](https://user-images.githubusercontent.com/63539071/201386245-d9d87631-8dc8-40c0-b228-673cca38ae9b.png)
