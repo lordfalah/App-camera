@@ -15,6 +15,9 @@ Memudahkan crop gambar
 - __React webcam__
 Memudahkan untuk pengambilan camera
 
+## Live demo
+https://main--phenomenal-sable-a6fd26.netlify.app/
+
 
 ## Features
 
