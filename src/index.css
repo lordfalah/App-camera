@@ -42,6 +42,8 @@ video {
 	z-index: -1;
 }
 
-.reactEasyCrop_Container {
-	border-radius: 8px;
+/* img crop */
+
+.reactEasyCrop_Image {
+	border-radius: 8px 8px 0 0;
 }

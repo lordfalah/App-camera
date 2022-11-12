@@ -42,35 +42,41 @@ const CropPhotoCmp = ({ children }) => {
 	}
 
 	return (
-		<section>
+		<section style={{ position: "relative" }}>
 			<Container className="my-3">
-				<div style={{ position: "relative" }}>
-					<Cropper
-						image={encodeImg}
-						crop={crop}
-						rotation={rotation}
-						zoom={zoom}
-						aspect={4 / 3}
-						onCropChange={setCrop}
-						onRotationChange={setRotation}
-						onCropComplete={onCropComplete}
-						onZoomChange={setZoom}
-					/>
+				<Cropper
+					image={encodeImg}
+					crop={crop}
+					rotation={rotation}
+					zoom={zoom}
+					aspect={4 / 3}
+					onCropChange={setCrop}
+					onRotationChange={setRotation}
+					onCropComplete={onCropComplete}
+					onZoomChange={setZoom}
+				/>
 
-					{children}
-
-					<FooterBtn
-						styling={{
-							position: "absolute",
-							bottom: "0",
-							borderRadius: "0px 0px 8px 8px",
-						}}
-						onClick={showCroppedImage}
-					>
-						<Text>Potong Gambar</Text>
-					</FooterBtn>
-				</div>
+				{/* {children} */}
 			</Container>
+			<div
+				className="container"
+				style={{
+					position: "absolute",
+					bottom: "0",
+					left: 0,
+					right: 0,
+					margin: "0 auto",
+				}}
+			>
+				<FooterBtn
+					styling={{
+						borderRadius: "0px 0px 8px 8px",
+					}}
+					onClick={showCroppedImage}
+				>
+					<Text>Potong Gambar</Text>
+				</FooterBtn>
+			</div>
 		</section>
 	);
 };
