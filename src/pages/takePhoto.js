@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
-import NavbarLink from "../components/Navbar";
+import NavbarLink from "../components/element/Navbar";
 import TakePhotoCmp from "../components/TakePhotoCmp";
 
 const RouteTakePhoto = () => {

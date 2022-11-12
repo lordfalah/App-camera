@@ -31,6 +31,7 @@ video {
 	width: 100%;
 	height: 95vh;
 	object-fit: cover;
+	border-radius: 8px;
 }
 
 /* custoom input file */
@@ -39,4 +40,8 @@ video {
 	opacity: 0;
 	position: absolute;
 	z-index: -1;
+}
+
+.reactEasyCrop_Container {
+	border-radius: 8px;
 }

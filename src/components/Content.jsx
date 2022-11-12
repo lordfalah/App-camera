@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
-import Text from "./Text";
+import Text from "./element/Text";
 
 const Content = () => {
 	const { takeImg } = useOutletContext();
@@ -19,13 +19,13 @@ const Content = () => {
 							onClick={handleProfile}
 							type="button"
 							style={{
+								backgroundColor: takeImg ? null : "#E0E0E0",
+								backgroundImage: `url(${takeImg})`,
 								border: "none",
 								textDecoration: "none",
 								width: "3.5rem",
 								height: "3.5rem",
 								borderRadius: "0.5rem",
-								backgroundColor: takeImg ? null : "#E0E0E0",
-								backgroundImage: `url(${takeImg})`,
 								backgroundRepeat: "no-repeat",
 								backgroundPosition: "center",
 								backgroundSize: "cover",

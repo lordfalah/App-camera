@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import ChangeProfileCmp from "../components/ChangeProfile";
-import NavbarLink from "../components/Navbar";
+import NavbarLink from "../components/element/Navbar";
 
 const RouteChangeProfile = () => {
 	const navigate = useNavigate("");

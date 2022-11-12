@@ -1,25 +1,25 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 
-import Text from "./Text";
+import Text from "./element/Text";
 
 const TakeFromGalery = () => {
 	const [selectedFile, setSelectedFile] = useState();
 	const { setEncodeImg } = useOutletContext();
-	const [, setPreview] = useState();
+
 	const navigate = useNavigate("");
 
 	// create a preview as a side effect, whenever selected file is changed
 	useEffect(() => {
 		if (!selectedFile) {
-			setPreview(undefined);
+			setEncodeImg(undefined);
 			return;
 		}
 
 		const objectUrl = URL.createObjectURL(selectedFile);
-		setPreview(objectUrl);
 		setEncodeImg(objectUrl);
-	}, [selectedFile, setEncodeImg]);
+		navigate("/cropPhoto");
+	}, [selectedFile, setEncodeImg, navigate]);
 
 	const onSelectFile = async (e) => {
 		if (!e.target.files || e.target.files.length === 0) {
@@ -29,7 +29,6 @@ const TakeFromGalery = () => {
 
 		// I've kept this example simple by using the first image instead of multiple
 		await setSelectedFile(e.target.files[0]);
-		navigate("/cropPhoto");
 	};
 
 	return (

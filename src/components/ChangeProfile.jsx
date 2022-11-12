@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 
 import { Container } from "reactstrap";
-import ButtonCmp from "./ButtonCmp";
-import FooterCmp from "./FooterCmp";
+import ButtonCmp from "./element/ButtonCmp";
+import FooterBtn from "./element/FooterBtn";
 import TakeFromGalery from "./TakeFromGalery";
-import Text from "./Text";
+import Text from "./element/Text";
 
 const ChangeProfileCmp = () => {
 	const navigate = useNavigate("");
@@ -41,9 +41,9 @@ const ChangeProfileCmp = () => {
 					<TakeFromGalery />
 				</Container>
 			</section>
-			<FooterCmp>
+			<FooterBtn onClick={() => navigate("/")}>
 				<Text>Simpan</Text>
-			</FooterCmp>
+			</FooterBtn>
 		</Fragment>
 	);
 };

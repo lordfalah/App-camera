@@ -1,6 +1,6 @@
 import React from "react";
 
-const Text = ({ color, children, ...props }) => {
+const Text = ({ color, children }) => {
 	const addColor = color ? color : "#FFFFFF";
 	return (
 		<span
@@ -12,7 +12,6 @@ const Text = ({ color, children, ...props }) => {
 				fontWeight: 700,
 				lineHeight: "1rem",
 			}}
-			{...props}
 		>
 			{children}
 		</span>
