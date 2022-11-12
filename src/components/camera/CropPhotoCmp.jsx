@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Cropper from "react-easy-crop";
 import { Navigate, useNavigate, useOutletContext } from "react-router-dom";
 import { Container } from "reactstrap";
@@ -35,6 +35,17 @@ const CropPhotoCmp = () => {
 		}
 	}, [croppedAreaPixels, rotation, encodeImg, setTakeImg, navigate]);
 
+	const myRef = useRef(null);
+
+	// run this function from an event handler or an effect to execute scroll
+	useEffect(() => {
+		try {
+			myRef.current.scrollIntoView();
+		} catch (error) {
+			<Navigate to="/changeProfile" replace={true} />;
+		}
+	}, [myRef]);
+
 	if (!encodeImg) {
 		setEncodeImg("");
 
@@ -42,7 +53,7 @@ const CropPhotoCmp = () => {
 	}
 
 	return (
-		<section style={{ position: "relative" }}>
+		<section style={{ position: "relative", overflow: "auto" }}>
 			<Container className="my-3">
 				<Cropper
 					image={encodeImg}
@@ -57,6 +68,7 @@ const CropPhotoCmp = () => {
 				/>
 			</Container>
 			<div
+				ref={myRef}
 				className="container"
 				style={{
 					position: "absolute",

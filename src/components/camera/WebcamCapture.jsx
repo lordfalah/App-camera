@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { useNavigate, useOutletContext } from "react-router-dom";
+import React, { Fragment, useEffect, useRef } from "react";
+import { Navigate, useNavigate, useOutletContext } from "react-router-dom";
 import Webcam from "react-webcam";
 import { videoConstraints } from "../../utils/optionVidio";
 
@@ -12,6 +12,16 @@ const WebcamCapture = () => {
 		setEncodeImg(imageSrc);
 		navigate("/cropPhoto");
 	};
+
+	const myRef = useRef(null);
+	// run this function from an event handler or an effect to execute scroll
+	useEffect(() => {
+		try {
+			myRef.current.scrollIntoView();
+		} catch (error) {
+			<Navigate to="/changeProfile" replace={true} />;
+		}
+	}, [myRef]);
 
 	return (
 		<Webcam
@@ -26,6 +36,7 @@ const WebcamCapture = () => {
 				return (
 					<Fragment>
 						<button
+							ref={myRef}
 							style={{
 								position: "absolute",
 								left: 0,
