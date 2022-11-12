@@ -1,10 +1,12 @@
 import React from "react";
 import { Nav, Navbar, NavbarBrand, NavItem } from "reactstrap";
 
-const NavbarLink = ({ children, ...props }) => {
+const NavbarLink = ({ styling, children, ...props }) => {
+	const addStyle = styling ? styling : null;
 	return (
 		<Navbar
 			style={{
+				...addStyle,
 				backgroundColor: "#002984",
 				fontFamily: ["Nunito", "sans-serif"],
 			}}

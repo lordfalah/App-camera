@@ -36,7 +36,6 @@ const CropPhotoCmp = () => {
 	}, [croppedAreaPixels, rotation, encodeImg, setTakeImg, navigate]);
 
 	const myRef = useRef(null);
-
 	// run this function from an event handler or an effect to execute scroll
 	useEffect(() => {
 		try {
@@ -53,8 +52,12 @@ const CropPhotoCmp = () => {
 	}
 
 	return (
-		<section style={{ position: "relative", overflow: "auto" }}>
-			<Container className="my-3">
+		<section
+			style={{
+				position: "relative",
+			}}
+		>
+			<Container>
 				<Cropper
 					image={encodeImg}
 					crop={crop}
