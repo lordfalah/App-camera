@@ -1,9 +1,11 @@
 import React from "react";
 
-const FooterBtn = ({ children, styling, ...props }) => {
+const FooterBtn = ({ className, children, styling, ...props }) => {
+	const addClass = className ? className : "";
 	const addStyle = styling ? styling : null;
 	return (
 		<button
+			className={addClass}
 			{...props}
 			type="button"
 			style={{

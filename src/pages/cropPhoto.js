@@ -9,7 +9,7 @@ const RouteCropPhoto = () => {
 	return (
 		<Fragment>
 			<header>
-				<NavbarLink onClick={() => navigate("/takePhoto	")}>
+				<NavbarLink onClick={() => navigate("/changeProfile	")}>
 					Potong Gambar
 				</NavbarLink>
 			</header>

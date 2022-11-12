@@ -67,6 +67,7 @@ const CropPhotoCmp = () => {
 				}}
 			>
 				<FooterBtn
+					className="mb-3"
 					styling={{
 						borderRadius: "0px 0px 8px 8px",
 					}}
