@@ -46,4 +46,5 @@ video {
 
 .reactEasyCrop_Image {
 	border-radius: 8px 8px 0 0;
+	width: 95%;
 }
