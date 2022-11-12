@@ -6,7 +6,7 @@ import getCroppedImg from "../../utils/cropImage";
 import FooterBtn from "../element/FooterBtn";
 import Text from "../element/Text";
 
-const CropPhotoCmp = ({ children }) => {
+const CropPhotoCmp = () => {
 	const { encodeImg, setEncodeImg } = useOutletContext();
 	const [crop, setCrop] = useState({ x: 0, y: 0 });
 	const [rotation, setRotation] = useState(0);
@@ -49,14 +49,12 @@ const CropPhotoCmp = ({ children }) => {
 					crop={crop}
 					rotation={rotation}
 					zoom={zoom}
-					aspect={4 / 3}
+					aspect={1 / 1}
 					onCropChange={setCrop}
 					onRotationChange={setRotation}
 					onCropComplete={onCropComplete}
 					onZoomChange={setZoom}
 				/>
-
-				{/* {children} */}
 			</Container>
 			<div
 				className="container"
