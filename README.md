@@ -16,8 +16,7 @@ Memudahkan crop gambar
 Memudahkan untuk pengambilan camera
 
 ## Live demo
-https://main--phenomenal-sable-a6fd26.netlify.app/
-
+https://app-camera-web.netlify.app/
 
 ## Features
 
