@@ -52,3 +52,11 @@ video {
 	border-radius: 8px;
 	width: 95%;
 }
+
+.reactEasyCrop_CropArea {
+	width: 80% !important;
+}
+
+.reactEasyCrop_Contain {
+	max-height: 82% !important;
+}

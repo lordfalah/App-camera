@@ -70,24 +70,26 @@ const CropPhotoCmp = () => {
 					onZoomChange={setZoom}
 				/>
 
-				<div className="my-4" ref={myRef}>
+				<div className="my-4 ">
 					<div
 						alt="test"
 						style={{
 							width: "100%",
-							height: "90vh",
+							height: "80vh",
 						}}
 					/>
-					<FooterBtn
-						className="mb-4"
-						styling={{
-							borderRadius: "0px 0px 8px 8px",
-							position: "relative",
-						}}
-						onClick={showCroppedImage}
-					>
-						<Text>Potong Gambar</Text>
-					</FooterBtn>
+
+					<div ref={myRef}>
+						<FooterBtn
+							styling={{
+								borderRadius: "0px 0px 8px 8px",
+								position: "relative",
+							}}
+							onClick={showCroppedImage}
+						>
+							<Text>Potong Gambar</Text>
+						</FooterBtn>
+					</div>
 				</div>
 			</Container>
 		</section>
