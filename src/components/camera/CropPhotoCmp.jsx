@@ -69,28 +69,27 @@ const CropPhotoCmp = () => {
 					onCropComplete={onCropComplete}
 					onZoomChange={setZoom}
 				/>
+
+				<div className="my-4" ref={myRef}>
+					<div
+						alt="test"
+						style={{
+							width: "100%",
+							height: "90vh",
+						}}
+					/>
+					<FooterBtn
+						className="mb-4"
+						styling={{
+							borderRadius: "0px 0px 8px 8px",
+							position: "relative",
+						}}
+						onClick={showCroppedImage}
+					>
+						<Text>Potong Gambar</Text>
+					</FooterBtn>
+				</div>
 			</Container>
-			<div
-				ref={myRef}
-				className="container"
-				style={{
-					position: "absolute",
-					bottom: "0",
-					left: 0,
-					right: 0,
-					margin: "0 auto",
-				}}
-			>
-				<FooterBtn
-					className="mb-3"
-					styling={{
-						borderRadius: "0px 0px 8px 8px",
-					}}
-					onClick={showCroppedImage}
-				>
-					<Text>Potong Gambar</Text>
-				</FooterBtn>
-			</div>
 		</section>
 	);
 };
