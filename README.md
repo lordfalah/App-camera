@@ -21,7 +21,7 @@ https://app-camera-web.netlify.app/
 ## Features
 
 - Tidak melakukan reload
-- Camera active
+- Camera depan active
 - Import and save files from gallery
 
 
