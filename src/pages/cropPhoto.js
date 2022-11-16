@@ -8,11 +8,8 @@ const RouteCropPhoto = () => {
 
 	return (
 		<Fragment>
-			<header>
-				<NavbarLink
-					styling={{ position: "fixed", left: "0", right: "0", zIndex: 5 }}
-					onClick={() => navigate("/changeProfile	")}
-				>
+			<header style={{ position: "relative" }}>
+				<NavbarLink onClick={() => navigate("/changeProfile")}>
 					Potong Gambar
 				</NavbarLink>
 			</header>

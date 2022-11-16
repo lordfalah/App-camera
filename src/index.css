@@ -4,23 +4,26 @@ html {
 	scroll-behavior: smooth;
 }
 
-#root {
-	min-height: 100vh;
-	margin: 0;
+@media only screen and (min-width: 992px) {
+	.layout_parent {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #212121;
+	}
 
-	display: grid;
-	grid-template-rows: auto 1fr auto;
+	.layout {
+		width: 50%;
+		background-color: white;
+	}
 }
 
-@media only screen and (min-width: 992px) {
-	#root {
-		background-color: #212121;
-		color: white;
-	}
-
-	span {
-		color: white !important;
-	}
+.layout {
+	min-height: 100vh;
+	margin: 0;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -59,4 +62,8 @@ video {
 
 .reactEasyCrop_Contain {
 	max-height: 82% !important;
+}
+
+.reactEasyCrop_Container {
+	background-color: white;
 }

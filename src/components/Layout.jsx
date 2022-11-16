@@ -5,14 +5,18 @@ const Layout = () => {
 	const [encodeImg, setEncodeImg] = useState("");
 	const [takeImg, setTakeImg] = useState("");
 	return (
-		<Outlet
-			context={{
-				encodeImg,
-				setEncodeImg,
-				takeImg,
-				setTakeImg,
-			}}
-		/>
+		<div className="layout_parent">
+			<div className="layout">
+				<Outlet
+					context={{
+						encodeImg,
+						setEncodeImg,
+						takeImg,
+						setTakeImg,
+					}}
+				/>
+			</div>
+		</div>
 	);
 };
 

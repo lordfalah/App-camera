@@ -52,12 +52,12 @@ const CropPhotoCmp = () => {
 	}
 
 	return (
-		<section
-			style={{
-				position: "relative",
-			}}
-		>
-			<Container>
+		<section style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+			<Container
+				style={{
+					position: "relative",
+				}}
+			>
 				<Cropper
 					image={encodeImg}
 					crop={crop}
